@@ -7,13 +7,13 @@ ScrollReveal().reveal('.banner-options .banner1', {
         distance: '100%'
 });
 ScrollReveal().reveal('.banner-options .banner2', {
-    delay:200,
+    delay:150,
     origin: 'left',
         duration: 1000,
         distance: '100%'
 });
 ScrollReveal().reveal('.banner-options .banner3', {
-    delay:300,
+    delay:200,
     origin: 'left',
         duration: 1500,
         distance: '100%'
@@ -37,3 +37,14 @@ ScrollReveal().reveal('.footer-options .footer-3', {
         duration: 1500,
         distance: '100%'
 });
+
+window.onload = function() {
+    document.querySelector(".menu-mobile").addEventListener("click", function(){
+            if (document.querySelector(".menu nav ul").style.display == 'flex'){
+                document.querySelector(".menu nav ul").style.display= 'none';
+            } else {
+                document.querySelector(".menu nav ul").style.display='flex'
+            }
+        })
+   
+    }

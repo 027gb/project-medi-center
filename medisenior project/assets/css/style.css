@@ -155,7 +155,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #fff;
-    font-size: 12px;
+    font-size: 10px;
     padding: 1px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -250,10 +250,11 @@ article .news-resume {
 }
 
 .deparments-area {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     background-color: #39aae1;
-    margin:10px;
+    margin-right:10px;
+    margin-bottom:10px;
     display: inline-block;
 }
 
@@ -390,6 +391,78 @@ span {
     margin-right: 5px;
     text-align: center;
     background-color: #292929;
+}
+
+.menu-mobile {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.mm-line {
+    height: 2px;
+    background-color: #39aae1;
+}
+
+@media (max-width:1170px) {
+    .banner-head,
+    #geral section,
+    #geral aside,
+    .footer-copy,
+    .footer-area-desc,
+    .logo {
+        padding: 20px;
+    }
+
+    #geral {
+        margin-top: 350px;
+    }
+
+    .banner-head h1 {
+        font-size: 55px;
+    }
+    .banner-head h2 {
+        font-size: 15px;
+    }
+
+    .banner-options {
+        flex-direction: column;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .footer-options,
+    .footer-area {
+        flex-direction: column;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
 }
 
 
